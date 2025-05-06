@@ -1,3 +1,5 @@
+import styles from './Message.module.css'
+
 interface MessageProps {
     text: String;
     isImportant?: boolean
@@ -8,8 +10,8 @@ const Message = ({text, isImportant = false}: MessageProps) => {
         <div>
             {
                 isImportant
-                    ? <h2 style={{ color: 'red' }}>{text}</h2>
-                    : <p>{text}</p>
+                    ? <h2 className={styles.important}>{text}</h2>
+                    : <p className={styles.normal}>{text}</p>
             }
         </div>
     );
