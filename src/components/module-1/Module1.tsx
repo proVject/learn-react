@@ -5,6 +5,7 @@ import OrderStatus from "./OrderStatus.tsx";
 import SimpleForm from "./SimpleForm.tsx";
 import {ProductList} from "./ProductList/ProductList.tsx";
 import ColorPicker from "./ColorPicker/ColorPicker.tsx";
+import TodoList from "./Todo/TodoList.tsx";
 
 const Module1 = () => {
     return (
@@ -17,6 +18,7 @@ const Module1 = () => {
             <SimpleForm />
             <ProductList />
             <ColorPicker />
+            <TodoList />
         </>
     );
 };
